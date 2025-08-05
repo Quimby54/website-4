@@ -1,0 +1,93 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+      background-color: #333;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 15px;
+      display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #555;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.85);
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    
+    button {
+      margin-top: 20px;
+      background-color: darkslategrey;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    
+    
+    button:hover {
+      background-color: black;
+    }
+
+    @media (min-width: 768px) {
+      form {
+        padding: 30px;
+      }
+    }

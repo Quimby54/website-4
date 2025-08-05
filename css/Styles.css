@@ -1,0 +1,105 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 55px;
+  background-color: lightgray;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: left;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.hero1 {
+  width: 100%;
+}
+
+.hero1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  nav a {
+    display: inline-block;
+    padding: 0 15px
+  }
+
+  .hero1 {
+    width: 50%;
+    float: left;
+  }
+}
+
+
+
+nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;          
+  justify-content: flex-start;
+  gap: 15px; 
+} 
+
+.filter-original {
+  filter: none;
+}
+.filter-bw {
+  filter: grayscale(100%);
+}
+.filter-sepia {
+  filter: sepia(100%);
+}
+.filter-blur {
+  filter: blur(10px);
+}
+
+
+.mobile-index-text {
+  display: none; /* hide by default */
+  padding: 10px;
+  background-color: #eee;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+@media (max-width: 599px) and (orientation: portrait) {
+  .mobile-index-text {
+    display: block;
+  }
+}
+
+.desktop,
+.mobile,
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
